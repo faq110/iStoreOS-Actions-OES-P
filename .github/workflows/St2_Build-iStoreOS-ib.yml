@@ -1,3 +1,9 @@
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions:              # ← 加上这一段
+      contents: write         # ← 允许写入 release
+    steps:
 name: 💿 St2_Build-iStoreOS-ib
 on:
   repository_dispatch:
@@ -291,5 +297,3 @@ jobs:
           tag_name: iStoreOS-${{ env.VERSION }}-${{ inputs.openwrt_rootfs }}-${{ inputs.network_settings }}
           files: |
             ${{ env.PACKAGED_OUTPUTPATH }}/*.img.gz
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
