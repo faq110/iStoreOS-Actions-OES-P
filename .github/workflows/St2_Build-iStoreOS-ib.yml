@@ -29,6 +29,7 @@ on:
           - bdy-g18-pro
           - beikeyun
           - boca-tcn100
+          - boca-tcn200
           - cd1000
           - chainedbox
           - cm3588-nas
@@ -42,6 +43,7 @@ on:
           - eaidk-610
           - emb3531
           - fine3399
+          - firefly-itx-3588j
           - firefly-jd4
           - firefly-rk3399
           - fmx1-pro
@@ -65,7 +67,10 @@ on:
           - king3399
           - kylin3399
           - lckfb-tspi
+          - lckfb-tspi-3m
           - leez
+          - lubancat-1
+          - lubancat-2
           - lx-r3s
           - lyt-t68m
           - lz-d3568
@@ -83,6 +88,7 @@ on:
           - orangepi-5-plus
           - orangepi-5b
           - orangepi-zero3
+          - painet-p3
           - panther-x2
           - photonicat
           - r66s
@@ -99,6 +105,7 @@ on:
           - s905d
           - s905d-ki-pro
           - s905d-sml5442tw
+          - s905d3-khadas-vim3l
           - s905l
           - s905l-aurora-1s
           - s905l-b860av21u
@@ -196,6 +203,7 @@ on:
           - tpm312
           - tqc-a01
           - tvi3315a
+          - vontar-h618
           - vplus
           - wocyber-a3
           - wxy-oect
@@ -238,7 +246,7 @@ on:
           - dhcp
 
 env:
-  VERSION: 24.10.5
+  VERSION: 24.10.6
 
 jobs:
   build:
