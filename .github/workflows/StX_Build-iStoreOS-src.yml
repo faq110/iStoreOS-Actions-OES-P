@@ -109,4 +109,4 @@ jobs:
           files: |
             ${{ env.PACKAGED_OUTPUTPATH }}/*.img.gz
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ⭐ 改用 GITHUB_TOKEN 而不是 GH_TOKEN
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}  # ⭐ 改用 GITHUB_TOKEN 而不是 GH_TOKEN
